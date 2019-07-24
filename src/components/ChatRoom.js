@@ -123,7 +123,7 @@ class ChatRoom extends Component {
                                             <p> {message.text} </p>
                                             
                                             { (message.url==='url') ? '':<p>
-                                            <iframe width="160" height="115" src={message.url} frameBorder="0" allow=" encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                            <iframe title={message.title} width="160" height="115" src={message.url} frameBorder="0" allow=" encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                             </p>  }
                                             <p><small>{message.date}</small></p>
 
@@ -139,7 +139,7 @@ class ChatRoom extends Component {
                     
                         <p>{message.text}</p>
                         { (message.url==='url') ? '':<p>
-                        <iframe width="160" height="115" src={message.url} frameBorder="0" allow="encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        <iframe title={message.title} width="160" height="115" src={message.url} frameBorder="0" allow="encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                          </p>  }
                         <p><small>{message.date}</small></p>
 
